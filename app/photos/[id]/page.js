@@ -9,7 +9,7 @@ import { SlUserFollow } from "react-icons/sl";
 const PhotoPage = async ({ params }) => {
   const { id } = await params;
 
-  const res = await fetch(`http://localhost:3000/api/photos/${id}`, {
+  const res = await fetch(`https://iig-one.vercel.app/api/photos/${id}`, {
     cache: "no-store",
   });
 
