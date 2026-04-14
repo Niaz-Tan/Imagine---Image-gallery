@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const PhotoList = async () => {
-  const res = await fetch(`${process.env.BASE_API_URL}/photos`, {
+  const res = await fetch("/api/photos", {
     cache: "no-store",
   });
 
