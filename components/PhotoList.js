@@ -1,8 +1,8 @@
-// import { getFollowers } from "@/lib/methods";
 import { formate } from "@/lib/methods";
 import Image from "next/image";
 import Link from "next/link";
 import { CiHeart } from "react-icons/ci";
+import { IoShareSocial } from "react-icons/io5";
 
 const PhotoList = async () => {
   const res = await fetch(`https://iig-one.vercel.app/api/photos`, {
@@ -23,20 +23,30 @@ const PhotoList = async () => {
         {photos.map((photo) => (
           <div
             key={photo.id}
-            className="block break-inside-avoid overflow-hidden rounded-2xl bg-zinc-900 transition duration-300 hover:scale-[1.02] border border-zinc-800"
+            className=" break-inside-avoid overflow-hidden rounded-2xl bg-zinc-900 transition duration-300 border border-zinc-800 p-3 flex flex-col gap-2"
           >
-            <Link href={`/photos/${photo.id}`}>
-              <div>
+            <div className="relative group">
+              <div className="absolute right-2 top-2 opacity-0 group-hover:opacity-100">
+                <button className="bg-red-500 text-white px-5 py-2 rounded-lg font-semibold cursor-pointer ">
+                  Save
+                </button>
+              </div>
+              <div className="absolute right-2 bottom-2 opacity-0 group-hover:opacity-100">
+                <button className="text-zinc-950 bg-zinc-50 size-10 rounded-full flex justify-center items-center text-2xl font-semibold cursor-pointer ">
+                  <IoShareSocial />
+                </button>
+              </div>
+              <Link href={`/photos/${photo.id}`}>
                 <Image
                   src={photo.url}
                   alt={photo.title || "photo"}
                   width={700}
                   height={700}
-                  className="w-full object-cover"
+                  className="w-full object-cover rounded-lg z-0 bg-zinc-950 "
                 />
-              </div>
-            </Link>
-            <div className="px-5 py-2">
+              </Link>
+            </div>
+            <div>
               <div className="flex justify-between items-center">
                 <h1 className="text-lg font-semibold w-full">{photo.title}</h1>
                 <button className="flex items-center justify-center gap-1 border border-zinc-800 px-2 py-1 rounded-xl cursor-pointer">
