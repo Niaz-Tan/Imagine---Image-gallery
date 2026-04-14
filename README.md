@@ -8,13 +8,13 @@ It includes full CRUD functionality handled through Next.js API routes with in-m
 
 ## 🚀 Features
 
-* 🧱 Responsive masonry layout (Pinterest-style UI)
-* 🪟 Modal image preview using intercepting routes
-* 🔄 Full CRUD operations via API routes
-* 🔗 Dynamic routing (modal + full page view)
-* ❤️ Likes, views, and share tracking
-* 👤 Author information system
-* 🏷️ Tag-based image organization
+* 🧱 Responsive masonry layout (done)
+* 🪟 Modal image preview using intercepting routes (coming soon)
+* 🔄 Full CRUD operations via API routes (coming soon)
+* 🔗 Dynamic routing (modal + full page view) (done)
+* ❤️ Likes, views, and share tracking (coming soon)
+* 👤 Author information system (coming soon)
+* 🏷️ Tag-based image organization (coming soon)
 
 ---
 
@@ -26,36 +26,6 @@ It includes full CRUD functionality handled through Next.js API routes with in-m
 * **Data Source:** In-memory / JSON file
 
 ---
-
-## 📂 Project Structure
-
-```id="structure03"
-app/
-  (gallery)/
-    page.tsx
-    (.)images/[id]/page.tsx   // modal route
-  images/[id]/page.tsx        // full page view
-
-api/
-  images/
-    route.ts
-    [id]/route.ts
-
-data/
-  images.json (or in-memory array)
-```
-
----
-
-## ⚙️ API Endpoints
-
-```id="api03"
-GET    /api/images        → Fetch all images
-GET    /api/images/:id    → Fetch single image
-POST   /api/images        → Create new image
-PUT    /api/images/:id    → Update image
-DELETE /api/images/:id    → Delete image
-```
 
 ---
 
