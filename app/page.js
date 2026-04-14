@@ -1,5 +1,9 @@
+import PhotoList from "@/components/PhotoList";
+
 const page = () => {
-  return <div>page</div>;
+  return <div>
+    <PhotoList />
+  </div>;
 };
 
 export default page;
