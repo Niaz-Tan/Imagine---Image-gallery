@@ -191,22 +191,7 @@
     },
     "likes": 260
   },
-  {
-    "id": "13",
-    "title": "Wildlife Shot",
-    "url": "https://images.unsplash.com/photo-1501706362039-c6e08a7d9d1c",
-    "tags": ["animal", "wildlife"],
-    "views": 1400,
-    "share": 50,
-    "uploaded": "2024-09-15",
-    "author": {
-      "avatar": "https://i.pravatar.cc/150?img=13",
-      "name": "Nature Pro",
-      "bio": "Wildlife photographer",
-      "followers": 3700
-    },
-    "likes": 310
-  },
+
   {
     "id": "14",
     "title": "Food Aesthetic",
@@ -223,22 +208,7 @@
     },
     "likes": 520
   },
-  {
-    "id": "15",
-    "title": "Gaming Setup RGB",
-    "url": "https://images.unsplash.com/photo-1605902711622-cfb43c4437d1",
-    "tags": ["gaming", "setup"],
-    "views": 2600,
-    "share": 100,
-    "uploaded": "2024-09-25",
-    "author": {
-      "avatar": "https://i.pravatar.cc/150?img=15",
-      "name": "Gamer X",
-      "bio": "RGB lover",
-      "followers": 4800
-    },
-    "likes": 650
-  },
+
   {
     "id": "16",
     "title": "Open Road",
