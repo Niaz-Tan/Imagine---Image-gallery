@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { FaCode } from "react-icons/fa";
+import Logo from "./components/Logo";
 
 const Header = () => {
   return (
@@ -12,13 +13,7 @@ const Header = () => {
       className="px-6 md:px-20 py-4 border-b border-zinc-800 flex justify-between items-center bg-zinc-950/60 backdrop-blur-md sticky top-0 z-50"
     >
       {/* Logo */}
-      <motion.div
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        className="text-3xl md:text-4xl font-extrabold italic tracking-widest select-none bg-gradient-to-r from-white to-zinc-400 bg-clip-text text-transparent"
-      >
-        IIG
-      </motion.div>
+      <Logo />
 
       {/* Status */}
       <motion.p

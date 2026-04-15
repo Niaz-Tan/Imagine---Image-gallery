@@ -1,4 +1,4 @@
-import PhotoList from "@/components/PhotoList";
+import PhotoList from "@/components/photoPages/PhotoList";
 
 const page = () => {
   return <div>
